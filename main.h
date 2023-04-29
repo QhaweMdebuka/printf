@@ -98,7 +98,7 @@ int print_percent(va_list types, char buffer[],
         int flags, int width, int precision, int size);
 
 
-/* Functions to print numbers */
+/* printing  */
 
 int print_int(va_list types, char buffer[],
 
@@ -130,21 +130,21 @@ int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
 
-/* Function to print non printable characters */
+/* prnting a non- printable variable list */
 
 int print_non_printable(va_list types, char buffer[],
 
         int flags, int width, int precision, int size);
 
 
-/* Funcion to print memory address */
+/* printing memory adress in bytes */
 
 int print_pointer(va_list types, char buffer[],
 
         int flags, int width, int precision, int size);
 
 
-/* Funciotns to handle other specifiers */
+/* Specifers */
 
 int get_flags(const char *format, int *i);
 
@@ -155,21 +155,21 @@ int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
 
-/*Function to print string in reverse*/
+/*printing functions in reverse*/
 
 int print_reverse(va_list types, char buffer[],
 
         int flags, int width, int precision, int size);
 
 
-/*Function to print a string in rot 13*/
+/*Puts a string to the rot 13*/
 
 int print_rot13string(va_list types, char buffer[],
 
         int flags, int width, int precision, int size);
 
 
-/* width handler */
+/* width_handler */
 
 int handle_write_char(char c, char buffer[],
 
@@ -195,7 +195,7 @@ char buffer[],
         int flags, int width, int precision, int size);
 
 
-/****************** UTILS ******************/
+/*UTILS*/
 
 int is_printable(char);
 
@@ -209,4 +209,4 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 
-#endif /* MAIN_H */
+#endif
